@@ -1,0 +1,145 @@
+/* MASTER
+========================================================================== */
+
+html {
+  position: relative;
+  font-size: 1px;
+}
+
+body {
+  max-width: 1900px; /* ширина сайта */
+  width: 100%;
+  margin: 0 auto;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 18rem;
+  color: #878787;
+
+  background-color: #777;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* ================================================== */
+
+.font-sub {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-w-light {
+  font-weight: 300;
+}
+.font-w-regular {
+  font-weight: 400;
+}
+.font-w-extra-bold {
+  font-weight: 800;
+}
+
+.d-block {
+  display: block;
+}
+
+.p-abs {
+  position: absolute;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.p-fix {
+  position: fixed;
+}
+
+.w-100p {
+  width: 100%;
+}
+
+.h-100p {
+  height: 100%;
+}
+
+.min-h-100p {
+  min-height: 100%;
+}
+
+.h-100 {
+  height: 100px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-fs {
+  justify-content: flex-start;
+}
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+
+.flex-ai-fe {
+  align-items: flex-end;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.m-l-xs {
+  margin-left: 10%;
+}
+
+.m-l-s {
+  margin-left: 20%;
+}
+
+.m-l-m {
+  margin-left: 30%;
+}
+
+.white {
+  color: white;
+}
+
+.z-index {
+  z-index: 100;
+}
+
+/* ===================================== */
+
+.nav {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.025em;
+}
+
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.top {
+  background-image: url(../img/top/top_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-gradient {
+  background-image: linear-gradient(45.0deg, #0169b4 -6%, #a72b8f 106%);
+  opacity: 0.9;
+}

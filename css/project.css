@@ -1,0 +1,34 @@
+/* PROJECT
+========================================================================== */
+
+.btn {
+  display: block;
+  padding: 18px;
+  text-align: center;
+  line-height: normal;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: #999;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 170px;
+  min-height: 48px;
+  background-color: #fff;
+  border: 2px solid #cccccc;
+  border-radius: 24rem;
+}
+
+.btn:hover {
+  background-color: #0169b4;
+  color: #fff;
+}
+
+.btn--social {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
