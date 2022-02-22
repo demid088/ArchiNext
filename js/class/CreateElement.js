@@ -2,15 +2,18 @@ import Div from "./Div.js";
 import H from "./H.js";
 import Img from "./Img.js";
 import Nav from "./Nav.js";
+import P from "./P.js";
 import A from "./A.js";
 import Span from "./Span.js";
 import Css from "./Css.js";
+import Button from "./Button.js";
 
 export default class CreateElement {
   listClasses = {
     div: this._createDiv,
     img: this._createImg,
     nav: this._createNav,
+    p: this._createP,
     a: this._createA,
     span: this._createSpan,
     h1: this._createH,
@@ -19,6 +22,7 @@ export default class CreateElement {
     h4: this._createH,
     h5: this._createH,
     h6: this._createH,
+    button: this._createButton,
   };
 
   constructor(elem) {
@@ -62,6 +66,16 @@ export default class CreateElement {
     return h;
   }
 
+  _createP(elem) {
+    let p = new P(elem);
+
+    if (this._checkChildren(elem)) {
+      this._addChildrens(elem['children'], p);
+    }
+
+    return p;
+  }
+
   _createA(elem) {
     let a = new A(elem);
 
@@ -100,6 +114,16 @@ export default class CreateElement {
     }
 
     return nav;
+  }
+
+  _createButton(elem) {
+    let button = new Button(elem);
+
+    if (this._checkChildren(elem)) {
+      this._addChildrens(elem['children'], button);
+    }
+
+    return button;
   }
 // ================================================================== Children ==============================
   _checkChildren(elem) {

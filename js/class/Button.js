@@ -1,8 +1,8 @@
 import CheckProp from "./CheckProp.js";
 
-export default class Div {
+export default class Button {
   constructor(elem) {
-    let div = document.createElement(elem.tag);
+    let result = document.createElement(elem.tag);
     
     for (const attr in elem) {
       if (CheckProp._checkProp(attr)) {
@@ -11,9 +11,11 @@ export default class Div {
       
       const value = elem[attr];
       
-      div.setAttribute(attr, value);
+      result.setAttribute(attr, value);
     }
 
-    return div;
+    result.textContent = elem.text;
+
+    return result;
   }
 }
